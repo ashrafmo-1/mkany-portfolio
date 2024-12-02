@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>مكاني</title>
+</head>
+<body>
+    <!-- navgation bar -->
+    <div class="flex justify-between items-center w-11/12 md:w-4/5 m-auto py-5">
+      <div class="flex justify-start items-end flex-col">
+        <img src="assets/image_4de628ab.png" class="h-[25px]" />
+      </div>
+
+      <div class="flex justify-start items-center flex-row gap-[30px]">
+        <a href="./index.html" class="[font-family:Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#333]">الرئيسية</a>
+        <a href="./categorys.html" class="[font-family:Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#333333]">الخدمات</a>
+        <a href="./about-us.html" class="[font-family:Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#333333]">نبذة عنا</a>
+      </div>
+
+      <a href="./contact-us.html" class="border bg-transparent [font-family:Ping_AR_+_LT] font-medium leading-[19px] text-[#2c64e3] cursor-pointer min-w-[151px] h-[49px] w-[151px] inline-flex items-center justify-center gap-[3px]  rounded-lg border-solid border-[#2c64e3]">
+        <div class="w-6 h-6 flex"><img src="./assets/message.svg" alt="messages"></div>
+        <span>تواصل معنا</span>
+      </a>
+    </div>
+
+    <!-- products -->
+    <main class="py-24 w-4/5 m-auto">
+      <h1 class="[font-family:Ping_AR_+_LT] text-7xl mb-[70px] font-bold leading-[86px] text-[#333333]">عمال كمبيوتر</h1>
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(380px,1fr))] gap-8">
+        <div class="border bg-[white] box-border flex justify-start items-stretch flex-col gap-6 px-[23px] py-4 rounded-2xl border-solid border-[#e8e8e8]">
+          <img class="h-[245px] max-w-[initial] object-cover box-border block  rounded-lg border-[none]" src="./{A7E3E9D7-7CBB-44C7-9BCB-3623B9F0C3D1}.png" />
+          <p class="[font-family:Ping_AR_+_LT] text-[35px] font-bold leading-[42px] text-[#333333] whitespace-pre-wrap self-end">حسن حسونه</p>
+          <div class=" -mt-2">
+            <div class="flex justify-between items-center flex-row gap-2 w-[100.00%] box-border">
+              <div class="flex justify-start items-center flex-row">
+                <p class="[font-family:Ping_AR_+_LT] text-xl font-medium leading-6 text-[#333333] whitespace-pre-wrap ml-1.5">الجنسية:</p>
+                <p class="[font-family:Ping_AR_+_LT] text-xl font-medium leading-6 text-[#333333] whitespace-pre-wrap">مصري</p>
+              </div>
+              <div class="flex justify-start items-center flex-row">
+                <p class="[font-family:Ping_AR_+_LT] text-xl font-medium leading-6 text-[#333333] whitespace-pre-wrap ml-1.5">الوظيفة:</p>
+                <p class="[font-family:Ping_AR_+_LT] text-xl font-medium leading-6 text-[#333333] whitespace-pre-wrap">مطور خلفيه</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center flex-row gap-2 w-full box-border mt-2">
+              <div class="flex justify-start items-center flex-row">
+                <p class="[font-family:Ping_AR_+_LT] text-xl font-medium leading-6 text-[#333333] whitespace-pre-wrap ml-1.5">الحاله:</p>
+                <p class="[font-family:Ping_AR_+_LT] text-xl font-medium leading-6 text-[#333333] whitespace-pre-wrap">في علاقه معقده</p>
+              </div>
+              <div class="flex justify-start items-center flex-row">
+                <p class="[font-family:Ping_AR_+_LT] text-xl font-medium leading-6 text-[#333333] whitespace-pre-wrap ml-1.5">السن:</p>
+                <p class="[font-family:Ping_AR_+_LT] text-xl font-medium leading-6 text-[#333333] whitespace-pre-wrap">44</p>
+              </div>
+            </div>
+          </div>
+          <button onclick="window.location.href='./products-details.html'" class="bg-[#2c64e3] [font-family:Ping_AR_+_LT] text-base font-medium leading-[19px] text-[white] cursor-pointer h-12 inline-flex items-center justify-center gap-[3px] box-border rounded-lg border-[none]">
+            <div class="w-6 h-6 flex">
+              <svg viewBox="0 0 24 24" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="&lt;Icon> Before_2" data-node-id="I9066:1764;9066:1001;89:1331" xmlns="http://www.w3.org/2000/svg">
+                  <g id="heroicons-outline/arrow-left" data-node-id="I9066:1764;9066:1001;89:1331;7005:6658">
+                    <path id="Vector_17" data-node-id="I9066:1764;9066:1001;89:1331;7005:6658;2:832" d="M10.5,19.5l-7.5,-7.5M3,12l7.5,-7.5M3,12h18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            تفاصيل اكثر
+          </button>
+        </div>
+      </div>
+    </main>
+</body>
+</html>
