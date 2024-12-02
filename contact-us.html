@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>مكاني</title>
   </head>
@@ -10,68 +12,47 @@
     <!-- navigation bar -->
     <div class="flex justify-between items-center w-11/12 md:w-4/5 m-auto py-5">
       <div class="flex justify-start items-end flex-col">
-        <img src="assets/image_4de628ab.png" class="h-[25px]" />
+        <img src="./assets/MAKANI.jpg" class="h-[60px] w-[60px]" />
       </div>
 
-      <div class="flex justify-start items-center flex-row gap-[30px]">
+      <div class="nav-links flex justify-start items-center flex-row gap-[30px]">
         <a href="./index.html" class="font-[Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#333333]" >الرئيسية</a>
         <a href="./categorys.html" class="font-[Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#333333]" >الخدمات</a>
         <a href="./about-us.html" class="font-[Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#333333]" >نبذة عنا</a>
       </div>
 
-      <a href="./contact-us.html" class="border bg-transparent font-[Ping_AR_+_LT] font-medium leading-[19px] text-[#2c64e3] cursor-pointer min-w-[151px] h-[49px] w-[151px] inline-flex items-center justify-center gap-[3px] rounded-lg border-solid border-[#2c64e3]">
-        <div class="w-6 h-6 flex">
-          <img src="./assets/message.svg" alt="messages" />
-        </div>
-        <span>تواصل معنا</span>
-      </a>
+      <div class="flex items-center gap-3">
+        <a href="./contact-us.html" class="border bg-transparent font-[Ping_AR_+_LT] font-medium leading-[19px] text-[#2c64e3] cursor-pointer min-w-[100px] h-[49px] w-[151px] inline-flex items-center justify-center gap-[3px] rounded-lg border-solid border-[#2c64e3]">
+          <span>تواصل معنا</span>
+          <div class="w-6 h-6 flex">
+            <img src="./assets/message.svg" alt="messages" />
+          </div>
+        </a>
+
+        <button class="btn-sidebarToggle hidden items-center justify-center border border-[#2c64e3] h-[49px] w-[49px] rounded-lg p-1">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="#2C64E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
     </div>
 
-    <div class="flex justify-between w-11/12 md:w-4/5 m-auto items-stretch flex-col box-border pt-24 pb-[169px]" >
-      <h2 class="font-[Ping_AR_+_LT] text-7xl font-bold leading-[86px] text-[#333333]">
+    <main class="flex justify-between w-11/12 md:w-[90%] m-auto items-stretch flex-col box-border pt-24 pb-[169px]" >
+      <h2 class="font-[Ping_AR_+_LT] text-3xl md:text-7xl font-bold leading-[40px] md:leading-[86px] text-[#333333]">
         اتصل بنا لتلبية احتياجاتك.
       </h2>
-      <div class="flex justify-between flex-row gap-2 mt-20">
-        <form
-          class="flex justify-start items-stretch flex-col gap-[31px] w-340px md:w-[553px] box-border"
-        >
-          <div class="flex justify-start items-stretch flex-col">
-            <label
-              for="email"
-              class="font-[Ping_AR_+_LT] text-lg font-medium leading-[21.5px] text-[#333333]"
-            >
-              البريد الإلكتروني
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value="example@mail.com"
-              class="rounded border bg-[#fbfcf8] box-border flex justify-center items-end flex-col h-[50px] mt-[15px] px-6 border-solid border-[#8e8e8e] font-[Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#8e8e8e]"
-            />
-          </div>
-          <div class="flex justify-start items-center flex-row gap-3">
-            <div
-              class="flex justify-center items-stretch flex-col grow shrink basis-0"
-            >
-              <label
-                for="name"
-                class="font-[Ping_AR_+_LT] text-lg font-medium leading-[21.5px] text-[#333333]"
-              >
+
+      <div class="contact-us-page flex justify-between flex-row gap-2 mt-20">
+        <form class="flex justify-start items-stretch flex-col gap-[31px] w-full md:w-[553px] box-border">
+          <div class="flex justify-start items-center flex-col sm:flex-row  gap-3">
+            <div class="w-full flex justify-center items-stretch flex-col grow shrink basis-0">
+              <label for="name" class="font-[Ping_AR_+_LT] text-lg font-medium leading-[21.5px] text-[#333333]">
                 الاسم
               </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value="محمد احمد"
-                class="rounded border bg-[#fbfcf8] box-border flex justify-center items-end flex-col h-[50px] mt-[15px] px-6 border-solid border-[#8e8e8e] font-[Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#8e8e8e]"
-              />
+              <input type="text" id="name" name="name" class="rounded border bg-[#fbfcf8] box-border flex justify-center items-end flex-col h-[50px] mt-[15px] px-6 border-solid border-[#8e8e8e] font-[Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#8e8e8e]" />
             </div>
 
-            <div
-              class="flex justify-center items-stretch flex-col grow shrink basis-0"
-            >
+            <div class="flex justify-center items-stretch flex-col grow shrink basis-0 w-full">
               <label
                 for="phone"
                 class="font-[Ping_AR_+_LT] text-lg font-medium leading-[21.5px] text-[#333333]"
@@ -82,11 +63,16 @@
                 type="tel"
                 id="phone"
                 name="phone"
-                value="(316) 555-0116"
                 class="rounded border bg-[#fbfcf8] box-border flex justify-center items-end flex-col h-[50px] mt-[15px] px-6 border-solid border-[#8e8e8e] font-[Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#8e8e8e]"
               />
             </div>
           </div>
+
+          <div class="flex justify-start items-stretch flex-col">
+            <label for="email" class="font-[Ping_AR_+_LT] text-lg font-medium leading-[21.5px] text-[#333333]">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" class="rounded border bg-[#fbfcf8] box-border flex justify-center items-end flex-col h-[50px] mt-[15px] px-6 border-solid border-[#8e8e8e] font-[Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#8e8e8e]" />
+          </div>
+
           <div class="flex justify-start items-stretch flex-col">
             <label
               for="subject"
@@ -103,28 +89,19 @@
           </div>
           <div class="flex justify-start items-stretch flex-col">
             <div class="flex justify-start items-stretch flex-col">
-              <label
-                for="message"
-                class="font-[Ping_AR_+_LT] text-lg font-medium leading-[21.5px] text-[#333333]"
-              >
+              <label for="message" class="font-[Ping_AR_+_LT] text-lg font-medium leading-[21.5px] text-[#333333]">
                 الرسالة
               </label>
               <textarea
                 id="message"
                 name="message"
-                class="rounded border bg-[#fbfcf8] box-border flex justify-start items-end flex-col mt-[15px] pt-[13px] pb-0.5 px-[2.25px] border-solid border-[#333333] font-[Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#8e8e8e] px-[9.5px]"
+                class="rounded h-[200px] border bg-[#fbfcf8] box-border flex justify-start items-end flex-col mt-[15px] pt-[13px] pb-0.5 px-[2.25px] border-solid border-[#333333] font-[Ping_AR_+_LT] leading-[19px] text-[#8e8e8e] px-[9.5px]"
                 rows="4"
               ></textarea>
-              <div class="mt-[140px]">
-                <img
-                  src="assets/image_c6fe6c3e.png"
-                  class="h-[7px] max-w-[initial] w-[6.75px] block box-border"
-                />
-              </div>
             </div>
             <button
               type="submit"
-              class="bg-[#2c64e3] font-[Ping_AR_+_LT] text-base font-medium leading-[19px] text-white cursor-pointer min-w-[551px] h-12 block box-border mt-[23px] rounded-lg border-none"
+              class="bg-[#2c64e3] font-[Ping_AR_+_LT] text-base font-medium leading-[19px] text-white cursor-pointer h-12 block box-border mt-[23px] rounded-lg border-none"
             >
               إرسال رسالة
             </button>
@@ -274,6 +251,79 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
+
+    <!-- footer -->
+    <section class="footer bg-[#333333] py-[64px]">
+      <div class="w-11/12 md:w-4/5 m-auto">
+        <div class="flex justify-between flex-wrap ">
+
+          <div class="w-[450px] flex flex-col gap-[28px]">
+            <img src="./assets/MAKANI.jpg" width="70" height="50" alt="شعار" />
+
+            <div class="address">
+              <div class="title items-stretch font-semibold text-[#FBFCF8] mt-1">العنوان:</div>
+              <p class="text-[#FBFCF8] font-[100]">المستوى 1، 12 شارع العينة، سيدني NSW 2000</p>
+            </div>
+
+            <div class="contact">
+              <div class="title items-stretch font-semibold text-[#FBFCF8]">الاتصال:</div>
+              <p class="text-[#FBFCF8] font-[100] mt-1">+20 1007 8155 7</p>
+              <a href="mailto:Makanialain33@gmail.com" class="text-[#FBFCF8] font-[100]">Makanialain33@gmail.com</a>
+              </div>
+            <!-- social media -->
+            <div class="social-media-icons flex gap-[12px]">
+              <a href="https://www.facebook.com" target="_blank"><img src="./public/assets/Facebook.png" width="25" height="25" alt="فيسبوك" /></a>
+              <a href="https://www.instagram.com/makani_uae2024" target="_blank"><img src="./public/assets/Instagram.png" width="25" height="25" alt="إنستغرام" /></a>
+              <a href="https://www.linkedin.com" target="_blank"><img src="./public/assets/LinkedIn.png" width="25" height="25" alt="لينكد إن" /></a>
+              <a href="https://twitter.com" target="_blank"><img src="./public/assets/X.png" width="25" height="25" alt="تويتر" /></a>
+              <a href="https://www.youtube.com" target="_blank"><img src="./public/assets/Youtube.svg" width="25" height="25" alt="يوتيوب"/></a>
+            </div>
+          </div>
+
+          <!-- links -->
+          <div class="flex flex-col gap-[16px] w-[100px]">
+            <a href="./index.html" class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer">الرئيسية</a>
+            <a
+              href="./product.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              المنتجات
+            </a>
+            <a
+              href="./about-us.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              من نحن
+            </a>
+            <a
+              href="./contactus.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              تواصل معنا
+            </a>
+            <a
+              href="./blog.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              المدونة
+            </a>
+          </div>
+        </div>
+        <div  class="text-center mt-6 border-t pt-[32px] flex items-center justify-between flex-wrap-reverse border-[#FBFCF8]">
+          <p class="text-[#FBFCF8] text-[14px]">
+            &copy; 2024 تقنية الاقتباس. جميع الحقوق محفوظة.
+          </p>
+          <div class="links flex flex-col gap-[24px] md:flex-row">
+            <a href="" class="text-white">سياسة الخصوصية</a>
+            <a href="" class="text-white">شروط الخدمة</a>
+            <a href="" class="text-white">إعدادات الكوكيز</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

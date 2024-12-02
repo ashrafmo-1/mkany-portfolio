@@ -1,3 +1,14 @@
+const header = document.getElementById("header");
+const handleScroll = () => {
+  if (window.scrollY > 0) {
+    header.classList.add("pinned");
+  } else {
+    header.classList.remove("pinned");
+  }
+};
+window.addEventListener("scroll", handleScroll);
+
+
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,

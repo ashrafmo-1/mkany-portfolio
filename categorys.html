@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>مكاني</title>
@@ -10,34 +11,37 @@
   <body>
     <!-- navgation bar -->
     <div class="flex justify-between items-center w-11/12 md:w-4/5 m-auto py-5">
-      <div class="flex justify-start  flex-col">
-        <img src="assets/image_4de628ab.png" class="h-[25px]" />
+      <div class="flex justify-start items-end flex-col">
+        <img src="./assets/MAKANI.jpg" class="h-[60px] w-[60px]" />
       </div>
-      <div class="flex justify-start items-center flex-row gap-[30px]">
-          <a
-            href="./index.html"
-            class="[font-family:Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#333333]">الرئيسية</a>
+      <div class="nav-links flex justify-start items-center flex-row gap-[30px]">
+          <a href="./index.html" class="[font-family:Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#333333]">الرئيسية</a>
           <a href="./categorys.html" class="[font-family:Ping_AR_+_LT] text-base active-link font-normal leading-[19px] text-[#2c64e3]">الخدمات</a>
           <a href="./about-us.html" class="[font-family:Ping_AR_+_LT] text-base font-normal leading-[19px] text-[#333333]">نبذة عنا</a>
       </div>
 
-      <a
-        href="./contact-us.html"
-        class="border bg-transparent [font-family:Ping_AR_+_LT] font-medium leading-[19px] text-[#2c64e3] cursor-pointer min-w-[151px] h-[49px] w-[151px] inline-flex items-center justify-center gap-[3px] rounded-lg border-solid border-[#2c64e3]"
-      >
-        <div class="w-6 h-6 flex">
-          <img src="./assets/message.svg" alt="messages" />
-        </div>
-        <span>تواصل معنا</span>
-      </a>
+      <div class="flex items-center gap-3">
+        <a href="./contact-us.html" class="border bg-transparent font-[Ping_AR_+_LT] font-medium leading-[19px] text-[#2c64e3] cursor-pointer min-w-[100px] h-[49px] w-[151px] inline-flex items-center justify-center gap-[3px] rounded-lg border-solid border-[#2c64e3]">
+          <span>تواصل معنا</span>
+          <div class="w-6 h-6 flex">
+            <img src="./assets/message.svg" alt="messages" />
+          </div>
+        </a>
+
+        <button class="btn-sidebarToggle hidden items-center justify-center border border-[#2c64e3] h-[49px] w-[49px] rounded-lg p-1">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="#2C64E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- services -->
     <main class="bg-[white]">
       <div class="flex justify-center w-11/12 md:w-4/5 m-auto flex-col py-24">
-        <p class="[font-family:Ping_AR_+_LT] text-7xl font-bold leading-[86px] text-[#333333]">
+        <h1 class="[font-family:Ping_AR_+_LT] text-4xl md:text-7xl font-bold leading-[50px] md:leading-[86px] text-[#333333]">
           ما نقدمة إليك.
-        </p>
+        </h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
           <div class="bg-[#fbfcf8] cursor-pointer flex justify-start items-stretch flex-col max-w-[389px] rounded-xl border-[3px] border-solid border-[#fbfcf8]" onclick="window.location.href = './services.html'">
             <img src="assets/image_f4ffdb44.png" class="h-44 max-w-[initial] object-cover" />
@@ -90,7 +94,6 @@
         </div>
       </div>
     </main>
-
 
     <!-- footer -->
     <section class="footer bg-[#333333] py-[64px]">
@@ -161,5 +164,8 @@
         </div>
       </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
